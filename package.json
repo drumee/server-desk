@@ -1,7 +1,7 @@
 {
-  "name": "@drumee/mfs-server",
+  "name": "@drumee/server-team",
   "version": "1.0.1",
-  "description": "Drumee Meta Filesystem Server",
+  "description": "Drumee Team Server",
   "main": "index.js",
   "scripts": {
     "register-plugin": "drumee-server-plugin add",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/drumee/mfs-server.git"
+    "url": "git+ssh://git@github.com/drumee/server-team.git"
   },
   "keywords": [
     "Filesystem",
@@ -25,9 +25,9 @@
   "author": "\"Somanos Sar <somanos@drumee.com>",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/drumee/mfs-server/issues"
+    "url": "https://github.com/drumee/server-team/issues"
   },
-  "homepage": "https://github.com/drumee/mfs-server#readme",
+  "homepage": "https://github.com/drumee/server-team#readme",
   "dependencies": {
     "@drumee/server-core": "^1.0.9",
     "@drumee/server-essentials": "^1.0.5",
