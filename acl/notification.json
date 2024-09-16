@@ -1,0 +1,13 @@
+{
+  "services": {
+    "clear_all": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/notification"
+  }
+}

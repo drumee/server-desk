@@ -1,0 +1,38 @@
+{
+  "services": {
+    "create": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "get": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      },
+      "method": "read"
+    },
+    "list": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "remove": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "update": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/reminder"
+  }
+}

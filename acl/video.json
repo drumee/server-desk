@@ -1,0 +1,26 @@
+{
+  "services": {
+    "master": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "segment": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "stream": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/video",
+    "private": "service/video"
+  }
+}

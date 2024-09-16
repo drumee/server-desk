@@ -1,0 +1,99 @@
+{
+  "services": {
+    "acknowledge": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "attachment": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "chat_rooms": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "chat_room_info": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "change_status": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "contact_rooms": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "count_all": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "delete": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "forward": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "messages": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "post": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "share_rooms": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "tag_chat_count": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "to_read": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      },
+      "method": "pages_to_read"
+    },
+    "upload_remove": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      },
+      "method": "remove_attachment"
+    }
+  },
+  "modules": {
+    "private": "service/private/chat"
+  }
+}

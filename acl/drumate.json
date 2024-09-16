@@ -1,0 +1,270 @@
+{
+  "services": {
+    "change_email": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "change_mobile": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "change_password": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "check_drumate_exist": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "check_password": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "color_add": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "color_last": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "confirm_delete_account": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "contacts": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "data_usage": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete_account": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "log": true
+    },
+    "disk_space": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "drumate_hubs": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "font_add": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "font_last": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_drumate_detail": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_languages": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "get_profile": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_otp": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "hub_to_pro": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "hubs": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "helpdesk": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "intro_acknowledged": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "log": true
+    },
+    "logout": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "log": true
+    },
+    "my_contacts": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "method": "contacts"
+    },
+    "my_hubs": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "notification_center": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "notification_remove": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "prepare_data_backup": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "remove_avatar": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "reset_forgot_password": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "send_account_deletion_code": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "send_forgot_password_token": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "set_avatar": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "set_lang": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show_backup_log": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show_login_log": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "update_ident": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "update_profile": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "update_settings": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "validate_account_deletion_code": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "validate_forgot_password_token": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "verify_email": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/drumate",
+    "public": "service/yp"
+  }
+}

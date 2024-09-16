@@ -1,0 +1,94 @@
+{
+  "services": {
+    "backup": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "create_external_room": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "create_hub": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "preproc": "pre_create"
+      },
+      "log": true
+    },
+    "create_website": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "create_wicket": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_alternate_account": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_env": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_workers": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "home": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      },
+      "log": true
+    },
+    "leave_hub": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "quick_share": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "reorder": {
+      "scope": "hub",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "set_online_status": {
+      "scope": "hub",
+      "permission": {
+        "fast_check": "user_permission"
+      }
+    },
+    "limit": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/desk"
+  }
+}

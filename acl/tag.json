@@ -1,0 +1,32 @@
+{
+  "services": {
+    "list": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "get_by_name": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "store": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "delete": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/tag",
+    "private": "service/private/tag"
+  }
+}

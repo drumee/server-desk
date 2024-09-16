@@ -1,0 +1,115 @@
+{
+  "services": {
+    "book": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "get_meeting_members": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "get_screen": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "get": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      },
+      "method": "get_or_create"
+    },
+    "hello": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    },
+    "invite": {
+      "scope": "hub",
+      "permission": {
+        "src": "write",
+        "fast_check": "user_permission"
+      }
+    },
+    "join": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "leave": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "public_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "shutdown": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "remove": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "request_screen_access": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "requestAccess": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    },
+    "unified_room": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    },
+    "update": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "users": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/room",
+    "private": "service/private/room"
+  }
+}

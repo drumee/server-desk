@@ -1,0 +1,20 @@
+{
+  "services": {
+    "create": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "find": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/seo",
+    "private": "service/seo"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "services": {
+    "add": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/blacklist"
+  }
+}

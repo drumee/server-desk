@@ -1,0 +1,259 @@
+{
+  "services": {
+    "organisation_add": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "organisation_update": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "organisation_update_password_level": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "organisation_update_double_auth": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "organisation_update_dir_visiblity": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "organisation_update_dir_info": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "my_subscription": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "my_organisation": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "my_privilege": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "setPassword": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "role_add": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "role_show": {
+      "scope": "domain",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "role_delete": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "role_assign": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "role_assigned": {
+      "scope": "domain",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "role_rename": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "role_reposition": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "member_add": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "member_update": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "member_delete": {
+      "scope": "domain",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "member_disconnect": {
+      "scope": "domain",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "member_show": {
+      "scope": "domain",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "member_list": {
+      "scope": "domain",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "member_change_status": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "member_loginlog": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "member_import": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "member_admin_add": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "member_admin_list": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "member_admin_remove": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "member_block": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "member_unblock": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "member_authentification": {
+      "scope": "domain",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "members_import": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "send_password_link": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "mimic_new": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "mimic_reject": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "mimic_active": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "mimic_end_bymimic": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "mimic_end_byuser": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "mimic_end_bytime": {
+      "scope": "domain",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "members_whocansee_update": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "members_whocansee": {
+      "scope": "domain",
+      "permission": {
+        "src": "write"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/adminpanel"
+  }
+}

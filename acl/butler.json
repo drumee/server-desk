@@ -1,0 +1,155 @@
+{
+  "services": {
+    "check_domain": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "check_token": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "complete_signup": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "get_reset_token": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "hello": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "ping": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "set_pass_phrase": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "signup": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      },
+      "log": true
+    },
+    "google_auth": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "google_callback": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2b_signup_company": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2b_signup_password": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      },
+      "log": true
+    },
+    "b2b_signup_personaldata": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2b_signup_otpverify": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2b_signup_otpresend": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2c_signup_skip_otpverify": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2c_signup_password": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      },
+      "log": true
+    },
+    "b2c_signup_otpverify": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "b2c_signup_otpresend": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "set_password": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "password_otpverify": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "password_otpresend": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "transferbox_files_send": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "transferbox_files_delete": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/butler",
+    "public": "service/butler"
+  }
+}

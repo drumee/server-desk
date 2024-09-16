@@ -1,0 +1,65 @@
+{
+  "name": "@drumee/mfs-server",
+  "version": "1.0.1",
+  "description": "Drumee Meta Filesystem Server",
+  "main": "index.js",
+  "scripts": {
+    "register-plugin": "drumee-server-plugin add",
+    "remove-plugin": "drumee-server-plugin remove",
+    "dev": "drumee-server-devel",
+    "deploy": "drumee-server-deploy",
+    "release": "git push && npm publish --access public && npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/drumee/mfs-server.git"
+  },
+  "keywords": [
+    "Filesystem",
+    "Drumee",
+    "Upload",
+    "Download",
+    "Directory",
+    "Structure"
+  ],
+  "author": "\"Somanos Sar <somanos@drumee.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/drumee/mfs-server/issues"
+  },
+  "homepage": "https://github.com/drumee/mfs-server#readme",
+  "dependencies": {
+    "@drumee/server-core": "^1.0.9",
+    "@drumee/server-essentials": "^1.0.5",
+    "accept-language": "^3.0.18",
+    "after": "^0.8.2",
+    "backbone": "^1.4.0",
+    "check-disk-space": "^3.3.1",
+    "cookie": "^0.4.1",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "dayjs": "^1.11.6",
+    "debug": "^4.3.3",
+    "excel4node": "^1.7.2",
+    "filesize": "^6.1.0",
+    "geoip-lite": "^1.4.2",
+    "googleapis": "^65.0.0",
+    "jsonfile": "^5.0.0",
+    "lodash": "^4.17.21",
+    "mariadb": "^3.0.0",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "parse-http-header": "^1.0.1",
+    "redis": "^4.0.3",
+    "shelljs": "^0.8.5",
+    "ua-parser-js": "^1.0.2",
+    "uniqid": "^5.2.0",
+    "urldecode": "^1.0.1",
+    "vcard": "^0.1.0",
+    "vcards-js": "^2.10.0",
+    "vcf": "^2.1.0"
+  },
+  "devDependencies": {
+    "@drumee/server-dev-tools": "^1.1.9"
+  }
+}

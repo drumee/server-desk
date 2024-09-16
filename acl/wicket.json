@@ -1,0 +1,10 @@
+{
+  "services": {
+    "create_external_meeting": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    }
+  }
+}

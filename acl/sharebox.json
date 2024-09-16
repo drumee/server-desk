@@ -1,0 +1,147 @@
+{
+  "services": {
+    "accept_notification": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "assign_permission": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "preproc": {
+          "checker": "pre_assign"
+        }
+      }
+    },
+    "copy_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "preproc": {
+          "checker": "pre_link"
+        }
+      }
+    },
+    "copy_to_sb": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "dest": "owner",
+        "preproc": {
+          "checker": "pre_transact"
+        }
+      }
+    },
+    "create_inbound_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "preproc": {
+          "checker": "pre_share_in"
+        }
+      }
+    },
+    "create_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "preproc": {
+          "checker": "pre_link"
+        }
+      }
+    },
+    "create_private_box": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "create_public_box": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_box_attr": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_inbound_node_attr": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_node_share_attr": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_outbound_node_attr": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "notification_count": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "notification_list": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "refuse_notification": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "remove_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "remove_open_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "revoke_permission": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "preproc": {
+          "checker": "pre_revoke"
+        }
+      }
+    },
+    "update_box": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "update_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/sharebox",
+    "private": "service/private/sharebox"
+  }
+}

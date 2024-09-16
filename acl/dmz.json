@@ -1,0 +1,43 @@
+{
+  "services": {
+    "info": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    },
+    "login": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    },
+    "logout": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    },
+    "reset_sessions": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "fast_check": "user_permission"
+      }
+    },
+    "signup": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/dmz",
+    "public": "service/dmz"
+  }
+}

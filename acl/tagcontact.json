@@ -1,0 +1,60 @@
+{
+  "services": {
+    "add": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "method": "tag_add"
+    },
+    "entity_assign": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "entity_assign_get": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "tag_assign": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "reposition": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "method": "tag_reposition"
+    },
+    "remove": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "method": "tag_remove"
+    },
+    "rename": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "method": "tag_rename"
+    },
+    "show_tag_by": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      },
+      "method": "tag_get_next"
+    }
+  },
+  "modules": {
+    "private": "service/private/tagcontact"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "services": {
+    "notify": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "message": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "dial": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/signaling",
+    "private": "service/signaling"
+  }
+}

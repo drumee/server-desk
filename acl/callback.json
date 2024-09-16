@@ -1,0 +1,29 @@
+{
+  "services": {
+    "stripe": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    },
+    "check_out_success": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    },
+    "check_out_cancel": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "public-api"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/callback",
+    "public": "service/callback"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "services": {
+    "accept": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "attendee": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "user_permission"
+      }
+    },
+    "broadcast": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "cancel": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "fast_check": "user_permission"
+      }
+    },
+    "decline": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "get_caller": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "fast_check": "user_permission"
+      }
+    },
+    "invite": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "fast_check": "user_permission"
+      },
+      "log": true
+    },
+    "join": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "user_permission"
+      },
+      "log": true
+    },
+    "leave": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    },
+    "logCall": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "fast_check": "user_permission"
+      }
+    },
+    "revoke": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner",
+        "fast_check": "user_permission"
+      }
+    },
+    "update": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/conference",
+    "public": "service/conference"
+  }
+}

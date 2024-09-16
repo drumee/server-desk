@@ -1,0 +1,37 @@
+{
+  "services": {
+    "add_users": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "grant": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "revoke": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "settings": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "show_users": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/permission"
+  }
+}

@@ -1,0 +1,21 @@
+CREATE TABLE `contact` (
+  `sys_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `id` varchar(16) CHARACTER SET ascii COLLATE ascii_general_ci DEFAULT NULL,
+  `surname` varchar(255) DEFAULT NULL,
+  `firstname` varchar(255) DEFAULT NULL,
+  `lastname` varchar(255) DEFAULT NULL,
+  `comment` text DEFAULT NULL,
+  `message` text DEFAULT NULL,
+  `entity` varchar(255) CHARACTER SET ascii COLLATE ascii_general_ci DEFAULT NULL,
+  `uid` varchar(16) CHARACTER SET ascii COLLATE ascii_general_ci DEFAULT NULL,
+  `category` enum('drumate','independant','social') NOT NULL,
+  `status` enum('memory','sent','received','invitation','informed','accept','active') DEFAULT NULL,
+  `invitetime` int(11) DEFAULT NULL,
+  `ctime` int(11) NOT NULL,
+  `mtime` int(11) NOT NULL,
+  `metadata` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`metadata`)),
+  `source` varchar(128) GENERATED ALWAYS AS (json_value(`metadata`,'$.source')) VIRTUAL,
+  PRIMARY KEY (`sys_id`),
+  UNIQUE KEY `entity` (`entity`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci

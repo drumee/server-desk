@@ -1,0 +1,254 @@
+{
+  "services": {
+    "accept_informed": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "add": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "add_to_group": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "block": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "change_status": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "connection_status": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "create_group": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete_contact": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete_contact_address": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete_contact_email": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete_contact_phone": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "delete_group": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "export_all": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_contact": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_group_avatar": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "google_auth": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "import": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "invitation_status": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    },
+    "invite": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "invite_accept": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "invite_count": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "invite_drumate": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "invite_get": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "invite_refuse": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "join": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "load": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "my_contacts": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "remove_from_group": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "search": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "search_drumee_contacts": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "search_my_contacts": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "set_group_avatar": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show_contact": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show_gmail_contacts": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show_groups": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "show_members": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "unblock": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "update": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/contact",
+    "public": "service/contact"
+  }
+}

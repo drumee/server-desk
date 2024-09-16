@@ -1,0 +1,251 @@
+{
+  "services": {
+    "add_contributors": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "add_external_member": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "add_font_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "change_history": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "change_owner": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "change_status": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "copy_link": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "delete_contributor": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "delete_external_member": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "delete_hub": {
+      "scope": "hub",
+      "permission": {
+        "src": "owner"
+      }
+    },
+    "get_action_log": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_contributors": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_members_by_type": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_attributes": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_pr_node_attr": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "get_settings": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_space_usage": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "get_statistics": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "hub_get_members_by_type": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "login_image": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    },
+    "logo": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous",
+        "fast_check": "public-api"
+      }
+    },
+    "lookup_hubers": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "poke": {
+      "scope": "hub",
+      "permission": {
+        "src": "read",
+        "fast_check": "user_permission"
+      }
+    },
+    "set_members_privilege": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "set_node_permission": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "set_privilege": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "show_contributors": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "show_privilege": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "update_contributor": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_favicon": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_ident": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_name": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_settings": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_title": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_visibility": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_external_members": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_external_room": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "update_external_settings": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "get_external_room_attr": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    },
+    "external_notification": {
+      "scope": "hub",
+      "permission": {
+        "src": "admin"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/hub",
+    "public": "service/hub"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "services": {
+    "acknowledge": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "acknowledge_ticket": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "clear_notifications": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "delete": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "enter": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "list_tickets": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "live_message": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    },
+    "messages": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "notify": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      },
+      "method": "notify_chat"
+    },
+    "post": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "post_ticket": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "read": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "send_ticket": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "show_ticket": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      }
+    },
+    "to_read": {
+      "scope": "hub",
+      "permission": {
+        "src": "read"
+      },
+      "method": "pages_to_read"
+    },
+    "update_ticket": {
+      "scope": "hub",
+      "permission": {
+        "src": "write"
+      }
+    }
+  },
+  "modules": {
+    "private": "service/private/channel",
+    "public": "service/channel"
+  }
+}

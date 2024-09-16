@@ -1,0 +1,20 @@
+{
+  "services": {
+    "server_export": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    },
+    "server_import": {
+      "scope": "domain",
+      "permission": {
+        "src": "delete"
+      }
+    }
+  },
+  "modules": {
+    "public": "service/mfs",
+    "private": "service/mfs"
+  }
+}
