@@ -17,7 +17,7 @@ const { existsSync, readFileSync } = require("fs");
 const { isEmpty, isString, isArray } = require("lodash");
 
 const { getPlugins } = require("../router/rest");
-const {resolve} = require("path");
+const { resolve } = require("path");
 const { credential_dir } = sysEnv();
 let file = resolve(credential_dir, `crypto/public.pem`);
 let publicKey = readFileSync(file);
@@ -191,6 +191,7 @@ class __yp extends Entity {
       this.output.list
     );
   }
+
 
   /**
    *

@@ -2,7 +2,7 @@
 const { existsSync } = require('fs');
 const { isEmpty, isArray } = require('lodash');
 const { 
-  Attr, toArray, Remit, Constants, 
+  Attr, toArray, Remit, Constants, sendSms,
   Messenger, DrumeeCache, RedisStore 
 } = require("@drumee/server-essentials")
 
@@ -12,7 +12,6 @@ const {
   WRONG_PASSWORD 
 } = Constants;
 
-const Sms = require('../../vendor/smsfactor');
 const { Entity, Generator, MfsTools } = require("@drumee/server-core");
 const { get_node_content } = MfsTools;
 
@@ -190,6 +189,7 @@ class __private_drumate extends Entity {
    *  @params {object} args -- extra data to be sent back to frontend
    */
   async get_otp() {
+    const Sms = require('../../vendor/smsfactor');
     let profile = this.user.get(Attr.profile);
     if (isEmpty(profile)) {
       let user = await this.yp.await_proc('get_visitor', this.uid);
@@ -259,35 +259,6 @@ class __private_drumate extends Entity {
     this.output.data(otp);
   }
 
-  /** Send One Time Password -- SMS
-   *  @params {object} cur_profile -- as extracted from yp
-   *  @params {object} args -- extra data to be sent back to frontend
-   */
-  async send_otp(cur_profile, args) {
-    const token = this.randomString();
-    const lang = this.client_language();
-    let otp = await this.yp.await_proc('otp_create', this.uid, token);
-    const message = DrumeeCache.message('_otp_code', lang);
-    const Moment = require('moment');
-    Moment.locale(lang);
-    const expiry = Moment(otp.expiry, 'X').format("hh:mm");
-    const mobile = `${cur_profile.areacode}${cur_profile.mobile}`
-    let opt = {
-      message: `${message.format(otp.code, expiry)}`,
-      receivers: [mobile]
-    }
-    let sms = new Sms(opt);
-    sms.send().then((result) => {
-      //this.debug("AAAA:334", result);
-      if (!isEmpty(result.invalidReceivers)) {
-        let msg = `${DrumeeCache.message('_invalid_recipient', lang)}`
-        this.output.data({ error: `${msg} : ${result.invalidReceivers[0]}` });
-        return;
-      }
-      otp.code = '******';
-      this.output.data({ ...otp, ...args });
-    })
-  }
 
   /** check_otp
    *  Check if there pending OTP
@@ -348,21 +319,12 @@ class __private_drumate extends Entity {
    * @returns 
    */
   async update_profile() {
-    let profile = this.input.need(Attr.profile);
-    let cur_profile = {};
-    try {
-      cur_profile = this.user.get(Attr.profile);
-    } catch {
-      cur_profile = {};
-    }
+    let user = this.user.toJSON();
+    let { profile } = user;
     if (await this.check_otp()) return;
-    for (let key in profile) {
-      if (['otp'].includes(key)) {
-        if (cur_profile.otp != null) {
-          await this.send_otp(cur_profile, { profile });
-          return;
-        }
-      }
+    if (/^(sms|email|passkey|1)$/.test(profile.otp)) {
+      await this.session.send_otp(user);
+      return;
     }
     await this.do_update_profile();
   }

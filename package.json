@@ -31,6 +31,7 @@
   "dependencies": {
     "@drumee/server-core": "^1.0.9",
     "@drumee/server-essentials": "^1.0.5",
+    "@drumee/server-mfs": "^1.0.2",
     "accept-language": "^3.0.18",
     "after": "^0.8.2",
     "backbone": "^1.4.0",
@@ -60,6 +61,6 @@
     "vcf": "^2.1.0"
   },
   "devDependencies": {
-    "@drumee/server-dev-tools": "^1.1.9"
+    "@drumee/server-dev-tools": "^1.1.10"
   }
 }

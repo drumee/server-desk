@@ -1,13 +1,11 @@
 
 const { isArray, after, union, filter, isEmpty } = require('lodash');
-const Media = require('../media');
 
 const {
-  Attr, Privilege, toArray,
-  RedisStore, uniqueId, sysEnv
+  Attr, Privilege, toArray, RedisStore, uniqueId, sysEnv,
 } = require("@drumee/server-essentials");
-
-class __private_desk extends Media {
+const { Mfs } = require("@drumee/server-core");
+class PrivateDesk extends Mfs {
 
   /**
    * 
@@ -64,7 +62,7 @@ class __private_desk extends Media {
     const owner_id = this.uid;
     let { hubname, area, filename } = args;
     if (!domain || !area) {
-      this.warn("MAL_FORMED_DATA", { args }, { domain,  area });
+      this.warn("MAL_FORMED_DATA", { args }, { domain, area });
       return this.exception.user("MAL_FORMED_DATA");
     }
 
@@ -535,4 +533,4 @@ class __private_desk extends Media {
   }
 }
 
-module.exports = __private_desk;
+module.exports = PrivateDesk;
